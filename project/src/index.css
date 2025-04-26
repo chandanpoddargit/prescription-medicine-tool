@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-gray-800 bg-gray-50;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-semibold;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md transition-all duration-200 font-medium;
+  }
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700;
+  }
+  .btn-secondary {
+    @apply bg-secondary-500 text-white hover:bg-secondary-600;
+  }
+  .btn-accent {
+    @apply bg-accent-500 text-white hover:bg-accent-600;
+  }
+  .btn-outline {
+    @apply border border-gray-300 bg-white hover:bg-gray-50;
+  }
+  
+  .input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6 transition-all duration-200 hover:shadow-lg;
+  }
+  
+  .badge {
+    @apply px-2 py-1 text-xs font-medium rounded-full;
+  }
+  .badge-primary {
+    @apply bg-primary-100 text-primary-800;
+  }
+  .badge-secondary {
+    @apply bg-secondary-100 text-secondary-800;
+  }
+  .badge-accent {
+    @apply bg-accent-100 text-accent-800;
+  }
+  .badge-warning {
+    @apply bg-warning-100 text-warning-800;
+  }
+  .badge-error {
+    @apply bg-error-100 text-error-800;
+  }
+
+  .transition-scale {
+    @apply transition-transform duration-200 hover:scale-105;
+  }
+}
